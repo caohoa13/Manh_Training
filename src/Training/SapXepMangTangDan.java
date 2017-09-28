@@ -1,8 +1,13 @@
 package Training;
-
+import java.util.Scanner;
 public class SapXepMangTangDan {
 	public static void main(String[] args) {
-		int[] array = {2, 1, 3, 4, 5, 10, 7, 9, 6, 8};
+		Scanner inPut = new Scanner(System.in);
+		int[] array = new int[5];
+		for(int i = 0; i < array.length; i ++) {
+			System.out.println("nhap phan tu thu " + i);
+			array[i] = inPut.nextInt();
+		}
 		for(int i = 0 ; i < array.length - 1; i ++) {
 			for(int j = i+1 ; j < array.length; j ++) {
 				if(array[i] > array[j]) {
@@ -12,6 +17,7 @@ public class SapXepMangTangDan {
 				}
 			}   
 		}
+		System.out.println("Mang sau khi sap xep tang dan:");
 		for(int i = 0; i < array.length; i ++) {
 			System.out.print(" " + array[i]);
 		}
