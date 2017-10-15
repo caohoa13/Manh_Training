@@ -9,11 +9,15 @@ public class InSao {
 		System.out.println("enter r: ");
 		r = inPut.nextInt();
 		for(i = 0; i < r; i ++) {
-			for(j = 0; j < i; j ++) {
+			for(j = r; j > i; j --) {
 				System.out.print("*");
 			}
 			System.out.println("");
 		}
+	}
+	 private void Sysout() {
+		// TODO Auto-generated method stub
+		 //ahihi
 	}
 
 }
